@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+
+    tools:context=".Activities.setting">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"
+        android:id="@+id/signOut"/>
+
+    <Button
+        android:layout_below="@+id/signOut"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Account"
+        android:id="@+id/delete"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/delete"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/linear"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/oldPass"
+            android:inputType="textPassword"
+            android:hint="Enter Old Pasword"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newPass"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:hint="Enter New Password"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reNewPass"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:hint="Re Enter Password"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:layout_marginTop="10dp"
+        android:text="Change Password"
+        android:id="@+id/change"/>
+
+</RelativeLayout>
