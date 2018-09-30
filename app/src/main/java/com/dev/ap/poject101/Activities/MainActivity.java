@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.journeys) {
 
-            Intent intent_journey = new Intent(MainActivity.this, Journeys.class);
+            Intent intent_journey = new Intent(MainActivity.this, JourneysActivity.class);
             startActivity(intent_journey);
 
         } else if (id == R.id.nav_manage) {

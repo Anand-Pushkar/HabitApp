@@ -65,7 +65,9 @@ public class AdapterJourneys extends RecyclerView.Adapter <AdapterJourneys.Journ
             @Override
             public void onClick(View view) {
 
-                onItemClickListener.onItemClick(thisJourney.getJourneyId(), view);
+                if(onItemClickListener != null){
+                    onItemClickListener.onItemClick(thisJourney.getJourneyId(), view);
+                }
                 Log.d(TAG, "onClick: View Clicked222222222222222");
             }
         });

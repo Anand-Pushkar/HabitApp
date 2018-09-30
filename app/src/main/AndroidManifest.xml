@@ -33,7 +33,13 @@
                 android:value=".Activities.LoginActivity" />
         </activity>
         <activity android:name=".Activities.setting" />
-        <activity android:name=".Activities.Journeys"></activity>
+        <activity android:name=".Activities.JourneysActivity" />
+        <activity android:name=".Activities.HealthActivity" />
+        <activity android:name=".Activities.SpiritualActivity" />
+        <activity android:name=".Activities.SocialActivity" />
+        <activity android:name=".Activities.RelationshipsActivity" />
+        <activity android:name=".Activities.ProductivityActivity" />
+        <activity android:name=".Activities.FinanceActivity"></activity>
     </application>
 
 </manifest>
