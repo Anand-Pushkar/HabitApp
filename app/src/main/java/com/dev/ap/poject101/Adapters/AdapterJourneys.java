@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.dev.ap.poject101.Activities.JourneysActivity;
 import com.dev.ap.poject101.Interfaces.OnItemClickListener;
 import com.dev.ap.poject101.Models.JourneysData;
 import com.dev.ap.poject101.R;
@@ -31,11 +32,13 @@ public class AdapterJourneys extends RecyclerView.Adapter <AdapterJourneys.Journ
 
     public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
 
+        Log.d(TAG, "setOnItemClickListener: Listener initialized");
+
         this.onItemClickListener = onItemClickListener;
     }
 
     //Constructor of AdapterJourneys
-    public AdapterJourneys(ArrayList<JourneysData> journeysDataArrayList, Context context) {
+    public AdapterJourneys(ArrayList<JourneysData> journeysDataArrayList, JourneysActivity context) {
 
         Log.d(TAG, "AdapterJourneys: Constructor of AdapterJourneys");
         this.journeysDataArrayList = journeysDataArrayList;
@@ -87,6 +90,7 @@ public class AdapterJourneys extends RecyclerView.Adapter <AdapterJourneys.Journ
         public JourneysViewHolder(View itemView) {
             super(itemView);
 
+            this.thisView = itemView;
             tvJourneyName = (TextView)itemView.findViewById(R.id.tv_JourneyName);
         }
     }

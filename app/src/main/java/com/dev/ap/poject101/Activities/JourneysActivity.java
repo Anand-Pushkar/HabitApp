@@ -33,6 +33,7 @@ public class JourneysActivity extends AppCompatActivity {
 
         rvJourneyList = (RecyclerView)findViewById(R.id.rvJourneys);
         rvJourneyList.setLayoutManager(new GridLayoutManager(this,2));
+        adapterJourneys = new AdapterJourneys(journeysDataArrayList, this);
         rvJourneyList.setAdapter(adapterJourneys);
 
         Log.d(TAG, "onCreate: AdapterJourneys has been set");
